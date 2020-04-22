@@ -1,0 +1,1048 @@
+{
+    "comparable": {
+        "average_pos_in_freq_table": {
+            "type": "language_model",
+            "description": "",
+            "max": 95.955,
+            "measurement_scale": 1,
+            "measurement_scale_text": "interval",
+            "min": -217.18,
+            "checked": 1
+        },
+        "check_if_head_is_noun": {
+            "type": "syntax",
+            "description": "Is the syntactic head of the input sentence(s) a noun? True if the head of at least one sentence of one sample is noun.",
+            "max": 1,
+            "measurement_scale": 0,
+            "measurement_scale_text": "nominal",
+            "min": 0,
+            "checked": 1
+        },
+        "check_if_head_is_verb": {
+            "type": "syntax",
+            "description": "Is the syntactic head of the input sentence(s) a verb? True if the head of at least one sentence of one sample is a verb.",
+            "max": 1,
+            "measurement_scale": 0,
+            "measurement_scale_text": "nominal",
+            "min": 0,
+            "checked": 1
+        },
+        "check_if_one_child_of_root_is_subject": {
+            "type": "syntax",
+            "description": "useful to determine if the parse is correct, normally at least one child is root except sentences like 'Es regnet.'. Only True if all sentences of the sample have at least one subject",
+            "max": 1,
+            "measurement_scale": 0,
+            "measurement_scale_text": "nominal",
+            "min": 0,
+            "checked": 1
+        },
+        "check_passive_voice": {
+            "type": "passive",
+            "description": "sentences in passive voice might be more complex than in active voice. True if at least one sentence of the sample is in passive voice.",
+            "max": 1,
+            "measurement_scale": 0,
+            "measurement_scale_text": "nominal",
+            "min": 0,
+            "checked": 1
+        },
+        "count_characters": {
+            "type": "character",
+            "description": "absolute number of characters per sample",
+            "max": 883,
+            "measurement_scale": 2,
+            "measurement_scale_text": "interval",
+            "min": 1,
+            "checked": 1
+        },
+        "count_characters_per_sentence": {
+            "type": "character",
+            "description": "average characters per sentence",
+            "max": 629.0,
+            "measurement_scale": 2,
+            "measurement_scale_text": "interval",
+            "min": 1.0,
+            "checked": 1
+        },
+        "count_characters_per_word": {
+            "type": "character",
+            "description": "average characters per word",
+            "max": 29.0,
+            "measurement_scale": 1,
+            "measurement_scale_text": "interval",
+            "min": 1.0,
+            "checked": 1
+        },
+        "count_sentences": {
+            "type": "syntax",
+            "description": "number of sentences per sample.",
+            "max": 166,
+            "measurement_scale": 2,
+            "measurement_scale_text": "interval",
+            "min": 1,
+            "checked": 1
+        },
+        "count_syllables_in_sentence": {
+            "type": "character",
+            "description": "number of syllables in the sample",
+            "max": 342.0,
+            "measurement_scale": 2,
+            "measurement_scale_text": "interval",
+            "min": 1,
+            "checked": 1
+        },
+        "count_syllables_per_sentence": {
+            "type": "character",
+            "description": "avg of syllables per sentence of the sample",
+            "max": 208.0,
+            "measurement_scale": 2,
+            "measurement_scale_text": "interval",
+            "min": 1.0,
+            "checked": 1
+        },
+        "count_syllables_per_word": {
+            "type": "character",
+            "description": "avg of syllables per word of the sample",
+            "max": 11.0,
+            "measurement_scale": 2,
+            "measurement_scale_text": "interval",
+            "min": 1.0,
+            "checked": 1
+        },
+        "count_words": {
+            "type": "words",
+            "description": "absolute number of words per sample",
+            "max": 493,
+            "measurement_scale": 2,
+            "measurement_scale_text": "interval",
+            "min": 1,
+            "checked": 1
+        },
+        "count_words_per_sentence": {
+            "type": "words",
+            "description": "avg number of words per sentence of sample",
+            "max": 246.5,
+            "measurement_scale": 2,
+            "measurement_scale_text": "interval",
+            "min": 1.0,
+            "checked": 1
+        },
+        "get_average_length_NP": {
+            "type": "phrases",
+            "description": "average length of all NPs in the sample",
+            "max": 342.0,
+            "measurement_scale": 2,
+            "measurement_scale_text": "interval",
+            "min": 2.0,
+            "checked": 1
+        },
+        "get_average_length_VP": {
+            "type": "phrases",
+            "description": "average length of all VPs in the sample",
+            "max": 342.0,
+            "measurement_scale": 2,
+            "measurement_scale_text": "interval",
+            "min": 2.0,
+            "checked": 1
+        },
+        "get_avg_length_PP": {
+            "type": "phrases",
+            "description": "average length of all PPs in the sample",
+            "max": 342.0,
+            "measurement_scale": 2,
+            "measurement_scale_text": "interval",
+            "min": 2.0,
+            "checked": 1
+        },
+        "get_lexical_complexity_score": {
+            "type": "language_model",
+            "description": "",
+            "max": 10.819798284210286,
+            "measurement_scale": 1,
+            "measurement_scale_text": "ordinal",
+            "min": 0.0,
+            "checked": 1
+        },
+        "get_parse_tree_height": {
+            "type": "syntax",
+            "description": "",
+            "max": 24.0,
+            "measurement_scale": 2,
+            "measurement_scale_text": "interval",
+            "min": 0.0,
+            "checked": 1
+        },
+        "get_ratio_clauses": {
+            "type": "clause",
+            "description": "",
+            "max": 2.0,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 0.0,
+            "checked": 1
+        },
+        "get_clauses_ratio": {
+            "type": "clause",
+            "description": "",
+            "max": 2.0,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 0.0,
+            "checked": 1
+        },
+        "get_ratio_of_coordinating_clauses": {
+            "type": "clause",
+            "description": "",
+            "max": 2.0,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 0.0,
+            "checked": 1
+        },
+        "get_ratio_mwes": {
+            "type": "word",
+            "description": "",
+            "max": 1.0,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 0.0,
+            "checked": 1
+        },
+        "get_ratio_named_entities": {
+            "type": "word",
+            "description": "",
+            "max": 1.0,
+            "measurement_scale": 0,
+            "measurement_scale_text": "ratio",
+            "min": 0.0,
+            "checked": 1
+        },
+        "get_ratio_of_function_words": {
+            "type": "word",
+            "description": "",
+            "max": 0.8,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 0.0,
+            "checked": 1
+        },
+        "get_ratio_of_nouns": {
+            "type": "POS",
+            "description": "",
+            "max": 1.0,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 0.0,
+            "checked": 1
+        },
+        "get_ratio_of_pronouns": {
+            "type": "POS",
+            "description": "",
+            "max": 1,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 0.0,
+            "checked": 1
+        },
+        "get_ratio_of_adjectives": {
+            "type": "POS",
+            "description": "",
+            "max": 1,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 0.0,
+            "checked": 1
+        },
+        "get_ratio_of_adpositions": {
+            "type": "POS",
+            "description": "",
+            "max": 1,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 0.0,
+            "checked": 1
+        },
+        "get_ratio_of_adverbs": {
+            "type": "POS",
+            "description": "",
+            "max": 1,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 0.0,
+            "checked": 1
+        },
+        "get_ratio_of_auxiliary_verbs": {
+            "type": "POS",
+            "description": "",
+            "max": 1,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 0.0,
+            "checked": 1
+        },
+        "get_ratio_of_conjunctions": {
+            "type": "POS",
+            "description": "",
+            "max": 1,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 0.0,
+            "checked": 1
+        },
+        "get_ratio_of_determiners": {
+            "type": "POS",
+            "description": "",
+            "max": 1,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 0.0,
+            "checked": 1
+        },
+        "get_ratio_of_numerals": {
+            "type": "POS",
+            "description": "",
+            "max": 1,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 0.0,
+            "checked": 1
+        },
+        "get_ratio_of_particles": {
+            "type": "POS",
+            "description": "",
+            "max": 1,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 0.0,
+            "checked": 1
+        },
+        "get_ratio_of_symbols": {
+            "type": "POS",
+            "description": "",
+            "max": 1,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 0.0,
+            "checked": 1
+        },
+        "get_ratio_of_interjections": {
+            "type": "POS",
+            "description": "",
+            "max": 1,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 0.0,
+            "checked": 1
+        },
+        "get_ratio_of_punctuation": {
+            "type": "POS",
+            "description": "",
+            "max": 1,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 0.0,
+            "checked": 1
+        },
+        "get_ratio_of_subordinate_clauses": {
+            "type": "clause",
+            "description": "",
+            "max": 0.4,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 0.0,
+            "checked": 1
+        },
+        "get_ratio_of_verbs": {
+            "type": "POS",
+            "description": "",
+            "max": 1,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 0.0,
+            "checked": 1
+        },
+        "get_ratio_prepositional_phrases": {
+            "type": "phrases",
+            "description": "",
+            "max": 0.75,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 0.0,
+            "checked": 1
+        },
+        "get_ratio_referential": {
+            "type": "discourse",
+            "description": "",
+            "max": 0.75,
+            "measurement_scale": 0,
+            "measurement_scale_text": "ratio",
+            "min": 0.0,
+            "checked": 1
+        },
+        "get_ratio_relative_phrases": {
+            "type": "phrases",
+            "description": "",
+            "max": 0.625,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 0.0,
+            "checked": 1
+        },
+        "get_type_token_ratio": {
+            "type": "lexical",
+            "description": "",
+            "max": 1.0,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 0.0,
+            "checked": 1
+        },
+        "is_non_projective": {
+            "type": "syntax",
+            "description": "",
+            "max": 65,
+            "measurement_scale": 0,
+            "measurement_scale_text": "nominal",
+            "min": 0,
+            "checked": 1
+        },
+        "max_pos_in_freq_table": {
+            "type": "language_model",
+            "description": "",
+            "max": 95.955,
+            "measurement_scale": 1,
+            "measurement_scale_text": "ordinal",
+            "min": -219.21,
+            "checked": 1
+        },
+        "sentence_fkgl": {
+            "type": "readability",
+            "description": "",
+            "max": 114.6,
+            "measurement_scale": 1,
+            "measurement_scale_text": "ordinal",
+            "min": -3.3999999999999986,
+            "checked": 1
+        },
+        "sentence_fre": {
+            "type": "readability",
+            "description": "",
+            "max": 121.22000000000004,
+            "measurement_scale": 1,
+            "measurement_scale_text": "ordinal",
+            "min": -724.7799999999999,
+            "checked": 1
+        }
+    },
+    "paired": {
+        "average_cosine_paired": {
+            "type": "language_model",
+            "description": "",
+            "max": 1.0000003576278689,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": -0.025335079059004784,
+            "checked": 1
+        },
+        "average_dot_paired": {
+            "type": "language_model",
+            "description": "",
+            "max": 15.237478256225586,
+            "measurement_scale": 1,
+            "measurement_scale_text": "ordinal",
+            "min": -0.01547306030988693,
+            "checked": 1
+        },
+        "average_pos_in_freq_table_paired": {
+            "type": "language_model",
+            "description": "",
+            "max": 87.435,
+            "measurement_scale": 1,
+            "measurement_scale_text": "ordinal",
+            "min": -260.98,
+            "checked": 1
+        },
+        "characters_per_sentence_difference_paired": {
+            "type": "difference",
+            "description": "",
+            "max": 745.0,
+            "measurement_scale": 1,
+            "measurement_scale_text": "ordinal",
+            "min": -811.0,
+            "checked": 1
+        },
+        "check_if_head_is_noun_paired": {
+            "type": "difference",
+            "description": "",
+            "max": 6.0,
+            "measurement_scale": 0,
+            "measurement_scale_text": "nominal",
+            "min": -6.0,
+            "checked": 1
+        },
+        "check_if_head_is_verb_paired": {
+            "type": "difference",
+            "description": "",
+            "max": 7.0,
+            "measurement_scale": 0,
+            "measurement_scale_text": "nominal",
+            "min": -10.0,
+            "checked": 1
+        },
+        "check_if_one_child_of_root_is_subject_paired": {
+            "type": "difference",
+            "description": "",
+            "max": 5.0,
+            "measurement_scale": 0,
+            "measurement_scale_text": "nominal",
+            "min": -9.0,
+            "checked": 1
+        },
+        "check_passive_voice_paired": {
+            "type": "difference",
+            "description": "",
+            "max": 1.0,
+            "measurement_scale": 0,
+            "measurement_scale_text": "nominal",
+            "min": -15.0,
+            "checked": 1
+        },
+        "complex_sentence_is_split_paired": {
+            "type": "difference",
+            "description": "",
+            "max": 1,
+            "measurement_scale": 0,
+            "measurement_scale_text": "nominal",
+            "min": 0,
+            "checked": 1
+        },
+        "complex_sentences_are_joined_paired": {
+            "type": "difference",
+            "description": "",
+            "max": 1,
+            "measurement_scale": 0,
+            "measurement_scale_text": "nominal",
+            "min": 0,
+            "checked": 1
+        },
+        "count_characters_paired": {
+            "type": "difference",
+            "description": "",
+            "max": 745.0,
+            "measurement_scale": 2,
+            "measurement_scale_text": "ordinal",
+            "min": -811.0,
+            "checked": 1
+        },
+        "count_characters_per_sentence_paired": {
+            "type": "difference",
+            "description": "",
+            "max": 575.6363636363636,
+            "measurement_scale": 1,
+            "measurement_scale_text": "ordinal",
+            "min": -363.0,
+            "checked": 1
+        },
+        "count_characters_per_word_paired": {
+            "type": "difference",
+            "description": "",
+            "max": 18.666666666666664,
+            "measurement_scale": 1,
+            "measurement_scale_text": "ordinal",
+            "min": -9.819798284210286,
+            "checked": 1
+        },
+        "count_sentences_paired": {
+            "type": "difference",
+            "description": "",
+            "max": 106.0,
+            "measurement_scale": 1,
+            "measurement_scale_text": "ordinal",
+            "min": -28.0,
+            "checked": 1
+        },
+        "count_syllables_in_sentence_paired": {
+            "type": "difference",
+            "description": "",
+            "max": 251.0,
+            "measurement_scale": 1,
+            "measurement_scale_text": "ordinal",
+            "min": -297.5,
+            "checked": 1
+        },
+        "count_syllables_per_sentence_paired": {
+            "type": "difference",
+            "description": "",
+            "max": 162.63636363636363,
+            "measurement_scale": 1,
+            "measurement_scale_text": "ordinal",
+            "min": -109.0,
+            "checked": 1
+        },
+        "count_syllables_per_word_paired": {
+            "type": "difference",
+            "description": "",
+            "max": 6.785791760583796,
+            "measurement_scale": 1,
+            "measurement_scale_text": "ordinal",
+            "min": -5.0,
+            "checked": 1
+        },
+        "count_words_paired": {
+            "type": "difference",
+            "description": "",
+            "max": 492.0,
+            "measurement_scale": 1,
+            "measurement_scale_text": "ordinal",
+            "min": -148.0,
+            "checked": 1
+        },
+        "count_words_per_sentence_paired": {
+            "type": "simplification",
+            "description": "",
+            "max": 168.0,
+            "measurement_scale": 1,
+            "measurement_scale_text": "ordinal",
+            "min": -71.0,
+            "checked": 1
+        },
+        "get_added_words_proportion_paired": {
+            "type": "simplification",
+            "description": "",
+            "max": 1.0,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 0.0,
+            "checked": 1
+        },
+        "get_average_length_NP_paired": {
+            "type": "difference",
+            "description": "",
+            "max": 22.142857142857146,
+            "measurement_scale": 1,
+            "measurement_scale_text": "ordinal",
+            "min": -254.0,
+            "checked": 1
+        },
+        "get_clauses_ratio_paired": {
+            "type": "difference",
+            "description": "",
+            "max": 1.0,
+            "measurement_scale": 1,
+            "measurement_scale_text": "ordinal",
+            "min": -2.0,
+            "checked": 1
+        },
+        "get_compression_ratio_paired": {
+            "type": "simplification",
+            "description": "",
+            "max": 222.0,
+            "measurement_scale": 1,
+            "measurement_scale_text": "ordinal",
+            "min": -177.0,
+            "checked": 1
+        },
+        "get_deleted_words_proportion_paired": {
+            "type": "simplification",
+            "description": "",
+            "max": 1.0,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 0.0,
+            "checked": 1
+        },
+        "get_rewritten_words_proportion_paired": {
+            "type": "simplification",
+            "description": "",
+            "max": 1.0,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 0.0,
+            "checked": 1
+        },
+        "get_kept_words_proportion_paired": {
+            "type": "simplification",
+            "description": "",
+            "max": 1.0,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 0.0,
+            "checked": 1
+        },
+        "get_unchanged_words_proportion_paired": {
+            "type": "simplification",
+            "description": "",
+            "max": 1.0,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 0.0,
+            "checked": 1
+        },
+        "get_levenshtein_distance_paired": {
+            "type": "language_model",
+            "description": "",
+            "max": 3.9772720336914062,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 0.0,
+            "checked": 1
+        },
+        "get_levenshtein_similarity_paired": {
+            "type": "language_model",
+            "description": "",
+            "max": 1.0,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 0.0,
+            "checked": 1
+        },
+        "get_lexical_complexity_score_paired": {
+            "type": "language_model",
+            "description": "",
+            "max": 9.028038814982231,
+            "measurement_scale": 1,
+            "measurement_scale_text": "ordinal",
+            "min": -9.028038814982231,
+            "checked": 1
+        },
+        "get_parse_tree_height_paired": {
+            "type": "syntax",
+            "description": "",
+            "max": 18.0,
+            "measurement_scale": 2,
+            "measurement_scale_text": "interval",
+            "min": -21.0,
+            "checked": 1
+        },
+        "hungarian_cosine_paired": {
+            "description": "",
+            "max": 1.0,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 0.0,
+            "checked": 1
+        },
+        "hungarian_dot_paired": {
+            "description": "",
+            "max": 18.297128677368164,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 0.0,
+            "checked": 1
+        },
+        "nlgeval_Bleu_1_paired": {
+            "type": "ngram",
+            "description": "",
+            "max": 0.9999999999696968,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 3.251824411891001e-21,
+            "checked": 1
+        },
+        "nlgeval_Bleu_2_paired": {
+            "type": "ngram",
+            "description": "",
+            "max": 1.0,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 3.7548833989688785e-21,
+            "checked": 1
+        },
+        "nlgeval_Bleu_3_paired": {
+            "type": "ngram",
+            "description": "",
+            "max": 1.0,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 4.509378235885463e-21,
+            "checked": 1
+        },
+        "nlgeval_Bleu_4_paired": {
+            "type": "ngram",
+            "description": "",
+            "max": 0.9999999999693396,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 0.0,
+            "checked": 1
+        },
+        "nlgeval_CIDEr_paired": {
+            "type": "ngram",
+            "description": "",
+            "max": 0.0,
+            "measurement_scale": 1,
+            "measurement_scale_text": "ordinal",
+            "min": 0.0,
+            "checked": 1
+        },
+        "nlgeval_METEOR_paired": {
+            "type": "ngram",
+            "description": "",
+            "max": 1.0,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 0.0,
+            "checked": 1
+        },
+        "nlgeval_ROUGE_L_paired": {
+            "type": "ngram",
+            "description": "",
+            "max": 1.0,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 0.0,
+            "checked": 1
+        },
+        "nltkBLEU_method0_paired": {
+            "type": "ngram",
+            "description": "",
+            "max": 1.0,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 0.0,
+            "checked": 1
+        },
+        "nltkBLEU_method1_paired": {
+            "type": "ngram",
+            "description": "",
+            "max": 1.0,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 0.0,
+            "checked": 1
+        },
+        "nltkBLEU_method2_paired": {
+            "type": "ngram",
+            "description": "",
+            "max": 1.1167470964180195,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 0.0,
+            "checked": 1
+        },
+        "nltkBLEU_method3_paired": {
+            "type": "ngram",
+            "description": "",
+            "max": 1.0,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 0.0,
+            "checked": 1
+        },
+        "nltkBLEU_method4_paired": {
+            "type": "ngram",
+            "description": "",
+            "max": 1.1167470964180195,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 0.0,
+            "checked": 1
+        },
+        "nltkBLEU_method5_paired": {
+            "type": "ngram",
+            "description": "",
+            "max": 1.1167470964180195,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 0.0,
+            "checked": 1
+        },
+        "nltkBLEU_method6_paired": {
+            "type": "ngram",
+            "description": "",
+            "max": 1.0,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 0.0,
+            "checked": 1
+        },
+        "nltkBLEU_method7_paired": {
+            "type": "ngram",
+            "description": "",
+            "max": 1.1167470964180195,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 0.0,
+            "checked": 1
+        },
+        "no_change_paired": {
+            "type": "simplification",
+            "description": "",
+            "max": 1,
+            "measurement_scale": 0,
+            "measurement_scale_text": "nominal",
+            "min": 0,
+            "checked": 1
+        },
+        "sentence_fkgl_paired": {
+            "type": "difference",
+            "description": "",
+            "max": 62.153333333333336,
+            "measurement_scale": 1,
+            "measurement_scale_text": "ordinal",
+            "min": -60.78,
+            "checked": 1
+        },
+        "syntactic_simplification_paired": {
+            "type": "simplification",
+            "description": "",
+            "max": 2.4285714285714284,
+            "measurement_scale": 0,
+            "measurement_scale_text": "nominal",
+            "min": 0,
+            "checked": 1
+        },
+        "syntactic_simplification_paired": {
+            "type": "simplification",
+            "description": "",
+            "max": 2.4285714285714284,
+            "measurement_scale": 0,
+            "measurement_scale_text": "nominal",
+            "min": 0,
+            "checked": 1
+        },
+        "lexical_simplification_paired": {
+            "type": "simplification",
+            "description": "",
+            "max": 2.4285714285714284,
+            "measurement_scale": 0,
+            "measurement_scale_text": "nominal",
+            "min": 0,
+            "checked": 1
+        },
+        "non_projective_to_projective_paired": {
+            "type": "syntax",
+            "description": "",
+            "max": 2.4285714285714284,
+            "measurement_scale": 0,
+            "measurement_scale_text": "nominal",
+            "min": 0,
+            "checked": 1
+        },
+        "passive_to_active_paired": {
+            "type": "syntax",
+            "description": "",
+            "max": 2.4285714285714284,
+            "measurement_scale": 0,
+            "measurement_scale_text": "nominal",
+            "min": 0,
+            "checked": 1
+        },
+        "reduction_of_parse_tree_height_paired": {
+            "type": "syntax",
+            "description": "",
+            "max": 2.4285714285714284,
+            "measurement_scale": 0,
+            "measurement_scale_text": "nominal",
+            "min": 0,
+            "checked": 1
+        },
+        "word_length_reduced_paired": {
+            "type": "lexical",
+            "description": "",
+            "max": 2.4285714285714284,
+            "measurement_scale": 0,
+            "measurement_scale_text": "nominal",
+            "min": 0,
+            "checked": 1
+        },
+        "word_intersection_paired": {
+            "type": "simplification",
+            "description": "",
+            "max": 1.0,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 0.0,
+            "checked": 1
+        },
+        "get_ratio_of_adjectives_paired": {
+            "type": "POS",
+            "description": "",
+            "max": 1,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 0.0,
+            "checked": 1
+        },
+        "get_ratio_of_adpositions_paired": {
+            "type": "POS",
+            "description": "",
+            "max": 1,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 0.0,
+            "checked": 1
+        },
+        "get_ratio_of_adverbs_paired": {
+            "type": "POS",
+            "description": "",
+            "max": 1,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 0.0,
+            "checked": 1
+        },
+        "get_ratio_of_auxiliary_verbs_paired": {
+            "type": "POS",
+            "description": "",
+            "max": 1,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 0.0,
+            "checked": 1
+        },
+        "get_ratio_of_conjunctions_paired": {
+            "type": "POS",
+            "description": "",
+            "max": 1,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 0.0,
+            "checked": 1
+        },
+        "get_ratio_of_determiners_paired": {
+            "type": "POS",
+            "description": "",
+            "max": 1,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 0.0,
+            "checked": 1
+        },
+        "get_ratio_of_numerals_paired": {
+            "type": "POS",
+            "description": "",
+            "max": 1,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 0.0,
+            "checked": 1
+        },
+        "get_ratio_of_particles_paired": {
+            "type": "POS",
+            "description": "",
+            "max": 1,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 0.0,
+            "checked": 1
+        },
+        "get_ratio_of_symbols_paired": {
+            "type": "POS",
+            "description": "",
+            "max": 1,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 0.0,
+            "checked": 1
+        },
+        "get_ratio_of_interjections_paired": {
+            "type": "POS",
+            "description": "",
+            "max": 1,
+            "measurement_scale": 3,
+            "measurement_scale_text": "ratio",
+            "min": 0.0,
+            "checked": 1
+        }
+    }
+}

@@ -1,0 +1,15 @@
+wheel
+spacy>=2.2.3
+gensim>=3.8.1
+nltk>=3.4.5
+spacy-udpipe>=0.1.0
+python-Levenshtein>=0.12.0
+pyphen>=0.9.5
+spacy-transformers>=0.5.1
+openpyxl>=3.0.3
+scikit-posthocs>=0.6.2
+spacy-stanza>=0.2.1
+stanza>=1.0.0
+git+https://github.com/Maluuba/nlg-eval.git@master
+git+https://github.com/samuelstevens/massalign.git
+git+https://github.com/rstodden/text-simplification-evaluation.git
