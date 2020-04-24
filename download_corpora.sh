@@ -15,7 +15,7 @@ rm costra_1.0.zip
 #wget https://github.com/louismartin/dress-data/raw/master/data-simplification.tar.bz2
 #tar -xvjf data-simplification.tar.bz2 -C data/EN-WikiLarge
 #rm data-simplification.tar.bz2
-#
+
 mkdir -p data/EN-TurkCorpus
 svn checkout https://github.com/cocoxu/simplification/trunk/data/turkcorpus data/EN-TurkCorpus
 
@@ -32,7 +32,7 @@ mv train.shared-task.tsv data/EN-QATS/train.shared-task.tsv
 #bzip2 -dk coctaill.xml.bz2
 #mv coctaill.xml data/SV-COCTAILL/coctaill.xml
 #rm coctaill.xml.bz2
-#
+
 
 mkdir -p data/DE-Klaper
 ## insert data manually
@@ -40,7 +40,7 @@ mkdir -p data/DE-Klaper
 mkdir -p data/EN-Newsela_2016
 ## insert complete newsela corpus
 mkdir -p data/EN-Newsela_2015/
-unzip data/EN-Newsela/newsela_article_corpus_2016-01-29/newsela_data_share-20150302.zip -d EN-Newselsa_2015
+unzip data/EN-Newsela_2016/newsela_article_corpus_2016-01-29/newsela_data_share-20150302.zip -d data/EN-Newsela_2015
 mkdir -p data/ES-Newsela
 mkdir -p data/ES-Newsela/articles
 find data/EN-Newsela_2016/newsela_article_corpus_2016-01-29/articles/ -name '*spanish.es.*.txt' -exec mv -i {} data/ES-Newsela/articles/ \;
@@ -49,4 +49,4 @@ find data/EN-Newsela_2016/newsela_article_corpus_2016-01-29/articles/ -name '*sp
 mkdir -p data/IT-PaCCSS
 ## insert data manually after request
 ## http://www.italianlp.it/resources/paccss-it-parallel-corpus-of-complex-simple-sentences-for-italian/
-#
+

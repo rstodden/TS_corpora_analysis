@@ -11,7 +11,7 @@ python -m spacy download de_core_news_sm
 python -m spacy download es_core_news_sm
 
 # preprocess NEWSELA
-python preprocess_newsela.py -f "data/EN-Newsela/newsela_article_corpus_2016-01-29/articles/" -o "data/EN-Newsela/newsela_article_corpus_2016-01-29/split/" -m "en_core_web_sm"
+python preprocess_newsela.py -f "data/EN-Newsela_2016/newsela_article_corpus_2016-01-29/articles/" -o "data/EN-Newsela_2016/newsela_article_corpus_2016-01-29/split/" -m "en_core_web_sm"
 mkdir -p "data/ES-Newsela/articles/split/"
 python preprocess_newsela.py -f "data/ES-Newsela/articles/" -o "data/ES-Newsela/split/" -m "es_core_news_sm"
 

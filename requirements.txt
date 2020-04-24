@@ -10,6 +10,7 @@ openpyxl>=3.0.3
 scikit-posthocs>=0.6.2
 spacy-stanza>=0.2.1
 stanza>=1.0.0
-git+https://github.com/Maluuba/nlg-eval.git@master
-git+https://github.com/samuelstevens/massalign.git
+smart-open==1.10.0
+git+https://github.com/Maluuba/nlg-eval.git@846166566bf0fdccbaa9e5b41da97147470b525b
+git+https://github.com/rstodden/massalign.git
 git+https://github.com/rstodden/text-simplification-evaluation.git

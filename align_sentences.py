@@ -317,8 +317,8 @@ def align_newsela_corpus(path_data, spacy_model, conllu_path, sep="\t", complex_
 	stopword_path = "stopwords.txt"
 
 	list_pairs_sent, list_pairs_pars, alignmentsl = list(), list(), list()
-	file_list = sorted(list(set([file[:-9] for file in os.listdir(
-		path_data)])))  # if file.endswith("."+lang_ending+"."+complex_level+".txt") or file.endswith("."+lang_ending+"."+simple_level+".txt")])))
+	file_list = sorted(list(set([file[:-9] for file in os.listdir(path_data)])))
+	# if file.endswith("."+lang_ending+"."+complex_level+".txt") or file.endswith("."+lang_ending+"."+simple_level+".txt")])))
 	n_n2n = 0
 	#for complex_level in range(0, 5):
 	#	for simple_level in range(1, 6):
@@ -364,15 +364,11 @@ def align_newsela_corpus(path_data, spacy_model, conllu_path, sep="\t", complex_
 						for a, aligned_sent_pair in enumerate(aligned_sents):
 							sent_id_simple, sent_id_complex, simple_sent, complex_sent = list(), list(), list(), list()
 							for s_complex, sent_complex in enumerate(aligned_sent_pair[0]):
-								#sent_id_complex.append(str(alignments_sentence[a][0][s_complex]))
-								#complex_sent.append(aligned_sent_pair[0][s_complex].strip())
-								sent_id_complex.append(str(alignments_sentence[a][0]))
-								complex_sent.append(aligned_sent_pair[0].strip())
+								sent_id_complex.append(str(alignments_sentence[a][0][s_complex]))
+								complex_sent.append(aligned_sent_pair[0][s_complex].strip())
 							for s_simple, sent_simple in enumerate(aligned_sent_pair[1]):
-								#sent_id_simple.append(str(alignments_sentence[a][1][s_simple]))
-								#simple_sent.append(aligned_sent_pair[1][s_simple].strip())
-								sent_id_simple.append(str(alignments_sentence[a][1]))
-								simple_sent.append(aligned_sent_pair[1].strip())
+								sent_id_simple.append(str(alignments_sentence[a][1][s_simple]))
+								simple_sent.append(aligned_sent_pair[1][s_simple].strip())
 							sent_id_simple = "|".join(sent_id_simple)
 							sent_id_complex = "|".join(sent_id_complex)
 							complex_sent = " ".join(complex_sent)

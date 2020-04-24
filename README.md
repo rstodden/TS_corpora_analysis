@@ -24,3 +24,4 @@ If you use this code, please cite R. Stodden, and L. Kallmeyer (2020, to appear)
 ## License
 The code of the analysis is licensed under the [MIT license](license.md). If use this implementation please cite our paper.
 
+## Files
