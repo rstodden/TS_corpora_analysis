@@ -1,0 +1,2 @@
+get_lexical_complexity_score_diff Kruskal  p<=.01 effectsize 0.1228 h 425.1521 z 5.7355 DE CS
+get_lexical_complexity_score_diff Kruskal  p<=.01 effectsize 0.1228 h 425.1521 z 5.7355 CS DE

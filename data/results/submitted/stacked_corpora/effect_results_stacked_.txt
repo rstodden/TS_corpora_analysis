@@ -1,0 +1,55 @@
+\begin{tabular}{ll}
+\toprule
+                               feature & it-PaCCSS \\
+\midrule
+             average_pos_in_freq_table &           \\
+                 check_if_head_is_noun &           \\
+                 check_if_head_is_verb &           \\
+ check_if_one_child_of_root_is_subject &           \\
+                   check_passive_voice &           \\
+                      count_characters &   0.45*** \\
+         count_characters_per_sentence &   0.54*** \\
+             count_characters_per_word &   0.21*** \\
+                       count_sentences &   0.15*** \\
+           count_syllables_in_sentence &   0.46*** \\
+          count_syllables_per_sentence &   0.55*** \\
+              count_syllables_per_word &   0.23*** \\
+                           count_words &   0.41*** \\
+              count_words_per_sentence &   0.51*** \\
+                 get_average_length_NP &           \\
+                 get_average_length_VP &           \\
+                     get_avg_length_PP &           \\
+          get_lexical_complexity_score &           \\
+                 get_parse_tree_height &   0.37*** \\
+                     get_ratio_clauses &   0.11*** \\
+                        get_ratio_mwes &           \\
+              get_ratio_named_entities &           \\
+               get_ratio_of_adjectives &           \\
+              get_ratio_of_adpositions &           \\
+                  get_ratio_of_adverbs &           \\
+          get_ratio_of_auxiliary_verbs &   0.19*** \\
+             get_ratio_of_conjunctions &   0.14*** \\
+     get_ratio_of_coordinating_clauses &           \\
+              get_ratio_of_determiners &           \\
+           get_ratio_of_function_words &           \\
+            get_ratio_of_interjections &           \\
+                    get_ratio_of_nouns &           \\
+                 get_ratio_of_numerals &           \\
+                get_ratio_of_particles &           \\
+                 get_ratio_of_pronouns &           \\
+              get_ratio_of_punctuation &           \\
+      get_ratio_of_subordinate_clauses &           \\
+                  get_ratio_of_symbols &           \\
+                    get_ratio_of_verbs &   0.22*** \\
+       get_ratio_prepositional_phrases &           \\
+                 get_ratio_referential &           \\
+            get_ratio_relative_phrases &   0.11*** \\
+                  get_type_token_ratio &    0.2*** \\
+                     is_non_projective &           \\
+                 max_pos_in_freq_table &           \\
+                         sentence_fkgl &   0.46*** \\
+                          sentence_fre &    0.4*** \\
+\bottomrule
+\end{tabular}
+
+

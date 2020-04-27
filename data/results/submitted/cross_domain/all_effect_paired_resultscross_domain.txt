@@ -1,0 +1,2 @@
+nlgeval_Bleu_1_paired Kruskal  p<=.01 effectsize 0.1162 h 1429.0979 z 33.7368 wiki web
+nlgeval_Bleu_1_paired Kruskal  p<=.01 effectsize 0.1162 h 1429.0979 z 33.7368 web wiki

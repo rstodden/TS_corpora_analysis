@@ -687,9 +687,11 @@ def get_statistics(input_data, comparable_col_names, paired_col_names, corpus_na
 
 def save_results(concat_descr, concat_effect, concat_descr_paired, output_descr_paired, type_value=""):
 	type_value_dir = ""
-	if type_value and not os.path.exists("data/results/"+type_value):
-		os.makedirs("data/results/"+type_value)
-		type_value_dir = type_value+"/"
+	if type_value:
+		if not os.path.exists("data/results/"+type_value):
+			os.makedirs("data/results/"+type_value)
+			type_value_dir = type_value+"/"
+		type_value = "_"+type_value
 	with open("data/results/"+type_value_dir+"all_descr_results"+type_value+".txt", "w") as f:
 		f.write(concat_descr.to_latex(index=False, escape=False))
 	with open("data/results/"+type_value_dir+"all_descr_results"+type_value+".csv", "w") as f:
@@ -1009,20 +1011,20 @@ def main(argv):
 		"news": ["cs-COSTRA.tsv", "es-Newsela45.tsv", "es-Newsela01.tsv", "en-Newsela_2015.tsv", "en-Newsela_201601.tsv"],
 		 "wiki": ["en-TurkCorpus.tsv", "en-QATS.tsv"],
 		 "web": ["de-Klaper.tsv", "it-PaCCSS.tsv"],
-		 "NewselaEN": ["en-Newsela_201601.tsv", "en-Newsela_201612.tsv", "en-Newsela_201623.tsv", "en-Newsela_201634.tsv", "en-Newsela_201645.tsv"],
-		 "NewselaES": ["es-Newsela01.tsv", "es-Newsela12.tsv", "es-Newsela23.tsv", "es-Newsela34.tsv", "es-Newsela45.tsv"],
+		 #"NewselaEN": ["en-Newsela_201601.tsv", "en-Newsela_201612.tsv", "en-Newsela_201623.tsv", "en-Newsela_201634.tsv", "en-Newsela_201645.tsv"],
+		 #"NewselaES": ["es-Newsela01.tsv", "es-Newsela12.tsv", "es-Newsela23.tsv", "es-Newsela34.tsv", "es-Newsela45.tsv"],
 		 "EN": ["en-TurkCorpus.tsv", "en-Newsela_2015.tsv", "en-Newsela_201601.tsv", "en-QATS.tsv"]
 		}
 	dict_domain = {
-		"news": ["cs-COSTRA.tsv", "es-Newsela45.tsv", "en-Newsela_2015.tsv", "en-Newsela_201601.tsv"  "es-Newsela01.tsv"],
+		"news": ["cs-COSTRA.tsv","en-Newsela_2015.tsv"], #, "en-Newsela_201601.tsv"  "es-Newsela01.tsv"],
 		"wiki": ["en-TurkCorpus.tsv", "en-QATS.tsv"],
 		 "web": ["de-Klaper.tsv", "it-PaCCSS.tsv"]
 		}
 	dict_lang = {
-		"EN": ["en-TurkCorpus.tsv", "en-Newsela_2015.tsv", "en-Newsela_201601.tsv", "en-QATS.tsv"],
+		#"EN": ["en-TurkCorpus.tsv", "en-Newsela_2015.tsv", "en-Newsela_201601.tsv", "en-QATS.tsv"],
 		"DE": ['de-Klaper.tsv'],
 		"CS": ['cs-COSTRA.tsv'],
-		"ES": ['es-Newsela45.tsv', 'es-Newsela01.tsv', 'es-Newsela12.tsv', 'es-Newsela23.tsv', 'es-Newsela34.tsv'],
+		#"ES": ['es-Newsela45.tsv', 'es-Newsela01.tsv', 'es-Newsela12.tsv', 'es-Newsela23.tsv', 'es-Newsela34.tsv'],
 		"IT": ['it-PaCCSS.tsv']
 		}
 

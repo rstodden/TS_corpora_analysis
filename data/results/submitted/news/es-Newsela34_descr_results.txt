@@ -1,0 +1,55 @@
+\begin{tabular}{llll}
+\toprule
+                               feature & \multicolumn{3}{l}{es-Newsela34} \\
+                                       &          complex &           simple & effect size \\
+\midrule
+             average_pos_in_freq_table &     5.14$\pm$0.6 &    5.18$\pm$0.63 &             \\
+                 check_if_head_is_noun &    0.13$\pm$0.34 &    0.15$\pm$0.36 &             \\
+                 check_if_head_is_verb &    0.76$\pm$0.43 &    0.77$\pm$0.42 &             \\
+ check_if_one_child_of_root_is_subject &    0.69$\pm$0.46 &    0.66$\pm$0.47 &             \\
+                   check_passive_voice &      0.0$\pm$0.0 &      0.0$\pm$0.0 &             \\
+                      count_characters &  84.35$\pm$44.51 &  73.38$\pm$38.84 &          ** \\
+         count_characters_per_sentence &  77.94$\pm$35.19 &  62.25$\pm$26.39 &         *** \\
+             count_characters_per_word &    5.13$\pm$0.72 &    5.07$\pm$0.73 &           * \\
+                       count_sentences &     1.1$\pm$0.37 &    1.21$\pm$0.52 &           * \\
+           count_syllables_in_sentence &  29.11$\pm$15.01 &  25.37$\pm$13.14 &          ** \\
+          count_syllables_per_sentence &   26.89$\pm$11.9 &   21.55$\pm$8.96 &         *** \\
+              count_syllables_per_word &    1.78$\pm$0.24 &    1.77$\pm$0.24 &           * \\
+                           count_words &   16.35$\pm$8.35 &    14.43$\pm$7.4 &          ** \\
+              count_words_per_sentence &   15.09$\pm$6.51 &   12.23$\pm$4.93 &         *** \\
+                 get_average_length_NP &    4.28$\pm$1.77 &    3.91$\pm$1.59 &             \\
+                 get_average_length_VP &   11.96$\pm$4.84 &   10.28$\pm$3.88 &             \\
+                     get_avg_length_PP &      nan$\pm$nan &      nan$\pm$nan &             \\
+          get_lexical_complexity_score &    8.57$\pm$0.94 &    8.51$\pm$1.01 &             \\
+                 get_parse_tree_height &    4.69$\pm$1.31 &    4.29$\pm$1.13 &          ** \\
+                     get_ratio_clauses &    0.07$\pm$0.06 &    0.06$\pm$0.06 &           * \\
+                        get_ratio_mwes &    0.04$\pm$0.07 &    0.04$\pm$0.07 &           * \\
+              get_ratio_named_entities &    0.08$\pm$0.12 &    0.09$\pm$0.13 &             \\
+               get_ratio_of_adjectives &    0.05$\pm$0.06 &    0.05$\pm$0.06 &             \\
+              get_ratio_of_adpositions &    0.12$\pm$0.07 &    0.11$\pm$0.07 &           * \\
+                  get_ratio_of_adverbs &    0.04$\pm$0.06 &    0.05$\pm$0.07 &             \\
+          get_ratio_of_auxiliary_verbs &    0.05$\pm$0.05 &    0.05$\pm$0.06 &             \\
+             get_ratio_of_conjunctions &    0.06$\pm$0.08 &    0.06$\pm$0.08 &           * \\
+     get_ratio_of_coordinating_clauses &    0.02$\pm$0.04 &    0.02$\pm$0.04 &             \\
+              get_ratio_of_determiners &    0.13$\pm$0.07 &    0.13$\pm$0.08 &             \\
+           get_ratio_of_function_words &    0.18$\pm$0.08 &    0.18$\pm$0.09 &             \\
+            get_ratio_of_interjections &      0.0$\pm$0.0 &      0.0$\pm$0.0 &             \\
+                    get_ratio_of_nouns &     0.31$\pm$0.1 &    0.31$\pm$0.11 &             \\
+                 get_ratio_of_numerals &    0.01$\pm$0.04 &    0.01$\pm$0.04 &             \\
+                get_ratio_of_particles &      0.0$\pm$0.0 &      0.0$\pm$0.0 &             \\
+                 get_ratio_of_pronouns &    0.05$\pm$0.06 &    0.05$\pm$0.06 &             \\
+              get_ratio_of_punctuation &    0.12$\pm$0.08 &    0.13$\pm$0.08 &           * \\
+      get_ratio_of_subordinate_clauses &    0.05$\pm$0.05 &    0.05$\pm$0.05 &             \\
+                  get_ratio_of_symbols &     0.0$\pm$0.01 &     0.0$\pm$0.01 &             \\
+                    get_ratio_of_verbs &    0.11$\pm$0.07 &    0.11$\pm$0.07 &           * \\
+       get_ratio_prepositional_phrases &     0.1$\pm$0.07 &     0.1$\pm$0.07 &           * \\
+                 get_ratio_referential &      0.0$\pm$0.0 &      0.0$\pm$0.0 &             \\
+            get_ratio_relative_phrases &    0.01$\pm$0.03 &    0.01$\pm$0.03 &           * \\
+                  get_type_token_ratio &    0.93$\pm$0.08 &    0.94$\pm$0.08 &             \\
+                     is_non_projective &    0.02$\pm$0.14 &    0.02$\pm$0.14 &             \\
+                 max_pos_in_freq_table &   10.06$\pm$0.99 &    9.97$\pm$1.06 &           * \\
+                         sentence_fkgl &   14.55$\pm$4.63 &    13.76$\pm$4.5 &           * \\
+                          sentence_fre &  16.24$\pm$30.41 &  18.72$\pm$30.47 &           * \\
+                                     N &                  &             5707 &             \\
+\bottomrule
+\end{tabular}
