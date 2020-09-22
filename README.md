@@ -44,20 +44,22 @@ that the relevance of different features for text simplification is different pe
         
 
 ## References
-If you use this code, please cite R. Stodden, and L. Kallmeyer (2020). A multi-lingual and cross-domain analysis of features for text simplification. In Proceedings of the Workshop on Tools and Resources to Empower People with REAding DIfficulties (READI), Marseille, France. URL: https://26679e8b-5ba3-4907-88f4-76d04d4fe176.filesusr.com/ugd/c75ba8_db0942eec06f4c09a71654b1be7e4efe.pdf#chapter.12
+If you use this code, please cite R. Stodden, and L. Kallmeyer (2020). A multi-lingual and cross-domain analysis of features for text simplification. In Proceedings of the Workshop on Tools and Resources to Empower People with REAding DIfficulties (READI), Marseille, France. URL: https://www.aclweb.org/anthology/2020.readi-1.12.pdf
 ```bibtex
-@inproceedings{stodden-etal-2020-multilingual,
+@inproceedings{stodden-kallmeyer-2020-multi,
     title = "A multi-lingual and cross-domain analysis of features for text simplification",
     author = "Stodden, Regina  and
       Kallmeyer, Laura",
-    booktitle = "Proceedings of the Workshop on Tools and Resources to Empower People with {REA}ding {DI}fficulties (READI2020)",
+    booktitle = "Proceedings of the 1st Workshop on Tools and Resources to Empower People with REAding DIfficulties (READI)",
     month = may,
     year = "2020",
     address = "Marseille, France",
-    publisher = "European Language Resources Association (ELRA)",
-    url = "https://26679e8b-5ba3-4907-88f4-76d04d4fe176.filesusr.com/ugd/c75ba8_db0942eec06f4c09a71654b1be7e4efe.pdf#chapter.12",
-    pages = "77-84",
-    abstract = "In  text  simplification  and  readability  research,  several  features  have  been  proposed  to  estimate  or  simplify  a  complex  text,  e.g., readability scores, sentence length, or proportion of POS tags.  These features are however mainly developed for English.  In this paper,we  investigate  their  relevance  for  Czech,  German,  English,  Spanish,  and  Italian  text  simplification  corpora.   Our  multi-lingual  andmulti-domain corpus analysis shows that the relevance of different features for text simplification is different per corpora, language, and domain.  For example, the relevance of the lexical complexity is different across all languages, the BLEU score across all domains,and 14 features within the web domain corpora.  Overall, the negative statistical tests regarding the other features across and withindomains and languages lead to the assumption that text simplification models may be transferable between different domains or differentlanguages.",
+    publisher = "European Language Resources Association",
+    url = "https://www.aclweb.org/anthology/2020.readi-1.12",
+    pages = "77--84",
+    abstract = "In text simplification and readability research, several features have been proposed to estimate or simplify a complex text, e.g., readability scores, sentence length, or proportion of POS tags. These features are however mainly developed for English. In this paper, we investigate their relevance for Czech, German, English, Spanish, and Italian text simplification corpora. Our multi-lingual and multi-domain corpus analysis shows that the relevance of different features for text simplification is different per corpora, language, and domain. For example, the relevance of the lexical complexity is different across all languages, the BLEU score across all domains, and 14 features within the web domain corpora. Overall, the negative statistical tests regarding the other features across and within domains and languages lead to the assumption that text simplification models may be transferable between different domains or different languages.",
+    language = "English",
+    ISBN = "979-10-95546-45-0",
 }
 ```
 
